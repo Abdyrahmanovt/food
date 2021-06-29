@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Roboto:wght@300;400;500;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__right-side {
+  display: flex;
+  align-items: center;
+}
+.header__right-side .logo {
+  margin-right: 35px;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.menu li a {
+  font-size: 16px;
+  line-height: 19px;
+  color: #150C01;
+  opacity: 0.6;
+  font-weight: 500;
+}
+
+.menu li a:hover {
+  font-weight: 500;
+  color: #DC780B;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+}
+.header__container {
+  margin-top: 31px;
+}
+.header__btn {
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  background: #DC780B;
+  border-radius: 5px;
+  padding: 13px 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+}
+.hero__box {
+  margin-top: 162px;
+  width: 555px;
+}
+.hero__title {
+  font-family: "Philosopher", sans-serif;
+  font-weight: bold;
+  font-size: 48.83px;
+  line-height: 58px;
+  color: #150C01;
+}
+.hero__desc {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #150C01;
+  opacity: 0.7;
+  margin: 42px 0 50px;
+}
+.hero__btn {
+  display: flex;
+  align-items: center;
+}
+.hero__btn .left__btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  background: #DC780B;
+  border-radius: 5px;
+  padding: 21px 40px;
+  cursor: pointer;
+}
+.hero__btn .right__btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #DC780B;
+  margin-left: 30px;
+  border: 1.5px solid #DC780B;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 21px 40px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
