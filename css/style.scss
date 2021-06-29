@@ -14,20 +14,29 @@ a {
 body {
   font-family: 'Roboto', sans-serif;
 }
-.row{
+
+.row {
   display: flex;
-  flex-wrap:wrap ;
+  flex-wrap: wrap;
   margin: 0 -15px;
 }
-.col-6{
+
+.col-6 {
   width: 50%;
   padding: 0 15px;
 }
+
+.col-4 {
+  width: 33.3333%;
+  padding: 0 15px;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 15px;
 }
+
 //===================*HEADER*================//
 .navbar {
   display: flex;
@@ -64,14 +73,17 @@ body {
 }
 
 .header {
-  &__container{
+  z-index: 3;
+
+  &__container {
     margin-top: 31px;
   }
+
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
- margin: auto;
+  margin: auto;
 
   &__btn {
     font-size: 16px;
@@ -84,22 +96,30 @@ body {
     cursor: pointer;
   }
 }
+
 //*============== HERO ============*//
 
-.hero{
+.hero {
   position: relative;
-  &__box{
-    margin-top: 162px;
+
+  &__img {
+    z-index: -1;
+  }
+
+  &__box {
+    padding: 162px 0 116px;
     width: 555px;
   }
-  &__title{
-    font-family:'Philosopher',sans-serif;
+
+  &__title {
+    font-family: 'Philosopher', sans-serif;
     font-weight: bold;
     font-size: 48.83px;
     line-height: 58px;
-     color: #150C01;
+    color: #150C01;
   }
-  &__desc{
+
+  &__desc {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -108,10 +128,12 @@ body {
     opacity: 0.7;
     margin: 42px 0 50px;
   }
-  &__btn{
+
+  &__btn {
     display: flex;
     align-items: center;
-    .left__btn{
+
+    .left__btn {
       font-weight: 500;
       font-size: 16px;
       line-height: 19px;
@@ -121,7 +143,8 @@ body {
       padding: 21px 40px;
       cursor: pointer;
     }
-    .right__btn{
+
+    .right__btn {
       font-weight: 500;
       font-size: 16px;
       line-height: 19px;
@@ -134,4 +157,72 @@ body {
       cursor: pointer;
     }
   }
+}
+
+.features {
+  text-align: center;
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #DC780B;
+    opacity: 0.7;
+  }
+
+  &__title {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: bold;
+    font-size: 31.25px;
+    line-height: 35px;
+    text-transform: capitalize;
+    color: #150C01;
+    margin: 7px 0 44px;
+
+  }
+.text-center{
+  text-align: center;
+}
+  .features__box {
+
+    .icon{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 88px;
+      height: 88px;
+      border-radius:50% ;
+      background: #fbf1e7;
+      position: relative;
+      margin: 0 auto;
+    }
+    .box__img{
+      position: absolute;
+    }
+
+
+  }
+
+  &__publication {
+    font-family: ' Philosopher', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 24px;
+    color: #150C01;
+    margin: 33px 0 15px;
+  }
+
+  &__info {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #150C01;
+    opacity: 0.7;
+
+
+  }
+
 }
